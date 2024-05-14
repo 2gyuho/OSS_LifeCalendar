@@ -1,0 +1,194 @@
+body {
+    max-width: 4800px;
+    min-width: 4800px;
+    margin: auto;
+}
+
+a {
+    color: #424242;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid black;
+}
+
+header,
+sidebar,
+main,
+footer {
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    float: left;
+    width: 1000px;
+    line-height: 300px;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.nav-list {
+    float: right;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 100px;
+    font-size: 50px;
+}
+
+sidebar {
+    width: 20%;
+    height: 3600px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+main {
+    width: 70%;
+    height: 3600px;
+    float: right;
+}
+
+
+
+
+.indicator-date {
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    line-height: 160px;
+    font-size: 80px;
+}
+
+.calendar {
+    height: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.month {
+    margin: 30px;
+    border: 1px solid black;
+    display: grid;
+}
+
+.month-name {
+    width: 100%;
+    height: 120px;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.days-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, minmax(120px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.day {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    line-height: 95px;
+}
+
+.day:hover {
+    color: red;
+}
+
+.day:active {
+    background-color: rgb(233, 245, 255);
+}
+
+.color-effect {
+    background-color: green;
+}
+
+
+
+#select-day {
+    text-align: center;
+    font-size: 100px;
+}
+
+#color-picker {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-option {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border: 4px solid #adadad;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#red { background-color: red; }
+#orange { background-color: orange; }
+#yellow { background-color: yellow; }
+#green { background-color: #008000; }
+#blue { background-color: #0000ff; }
+#indigo { background-color: #0d0054; }
+#purple { background-color: #8b00ff; }
+
+#selected-color {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    padding-left: 1.5px;
+    cursor: pointer;
+    border: 2px solid #adadad;
+    border-radius: 10px;
+    background-color: green;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#selected-color:hover {
+    transform: scale(1.2);
+}
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    clear: both;
+}
+
+.footer-container {
+    text-align: center;
+    font-size: 45px;
+    line-height: 200px;
+}
+
+#color-shadow {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.shade {
+    width: 120px;
+    height: 120px;
+    margin: 0 5px;
+}
